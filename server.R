@@ -10,7 +10,7 @@ library(magrittr)
 library(lubridate)
 library(readxl)
 library(DT)
-library(xlsx)
+#library(xlsx)
 # function that calculates profit factor from the vector
 source("profit_factor.R")
 #=============================================================
@@ -19,11 +19,9 @@ source("profit_factor.R")
 
 
 # specifying the path to the 4x terminals used into the dataframe
-Terminals <- data.frame(id = 1:5, TermPath = c("C:/Program Files (x86)/FxPro - Terminal1/MQL4/Files/",
-                                               "C:/Program Files (x86)/FxPro - Terminal2/MQL4/Files/",
-                                               "C:/Program Files (x86)/FxPro - Terminal3/MQL4/Files/",
-                                               "C:/Program Files (x86)/FxPro - Terminal4/MQL4/Files/",
-                                               "C:/Program Files (x86)/FxPro - Terminal5/MQL4/Files/"),
+Terminals <- data.frame(id = 1:3, TermPath = c("D:/FxPro - Terminal1/MQL4/Files/",
+                                               "D:/FxPro - Terminal2/MQL4/Files/",
+                                               "D:/FxPro - Terminal3/MQL4/Files/"),
                         stringsAsFactors = F)
 
 # -------------------------------
