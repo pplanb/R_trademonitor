@@ -27,11 +27,11 @@ Terminals <- data.frame(id = 1:3, TermPath = c("D:/FxPro - Terminal1/MQL4/Files/
 # -------------------------------
 # load prices of 28 currencies
 # if file is not found in the terminal sandbox, retrieve it from working directory
-if(!file.exists(file.path(Terminals[2,2], "AI_CP15-50000.csv"))){
+if(!file.exists(file.path(Terminals[3,2], "AI_CP15-50000.csv"))){
   # retrieve the price data from working directory      
   prices <- read_csv("AI_CP15.csv", col_names = F)
   # otherwise get the fresh copy from the terminal sandbox
-} else { prices <- read_csv(file.path(Terminals[2,2], "AI_CP15-50000.csv"), col_names = F)}
+} else { prices <- read_csv(file.path(Terminals[3,2], "AI_CP15-50000.csv"), col_names = F)}
 # make the price having proper format
 prices$X1 <- ymd_hms(prices$X1)
 
