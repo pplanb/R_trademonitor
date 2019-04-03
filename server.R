@@ -11,6 +11,7 @@ library(lubridate)
 library(readxl)
 library(DT)
 #library(xlsx)
+
 # function that calculates profit factor from the vector
 source("profit_factor.R")
 #=============================================================
